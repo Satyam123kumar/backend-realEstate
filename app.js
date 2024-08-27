@@ -7,7 +7,7 @@ import userRoute from './routes/user.route.js';
 import postRoute from './routes/post.route.js';
 import chatRoute from './routes/chat.route.js';
 import messageRoute from './routes/message.route.js';
-import {path} from "path";
+// import path from "path";
 
 const app = express();
 
@@ -23,10 +23,10 @@ app.use("/api/chat", chatRoute);
 app.use("/api/message", messageRoute);
 
 //access static file
-app.use(express.static(path.join(__dirname, "../client/dist")))
-app.get("*", function(req, res){
-    res.sendFile()
-})
+// app.use(express.static(path.join(__dirname, "../client/dist")))
+// app.get("*", function(req, res){
+//     res.sendFile()
+// })
 
 app.listen(8800, ()=>{
     console.log("Server started!")
