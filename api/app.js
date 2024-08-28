@@ -8,6 +8,7 @@ import postRoute from './routes/post.route.js';
 import chatRoute from './routes/chat.route.js';
 import messageRoute from './routes/message.route.js';
 import path from "path";
+import { fileURLToPath } from 'url';
 
 const app = express();
 
